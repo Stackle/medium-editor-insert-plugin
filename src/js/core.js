@@ -8,7 +8,6 @@
             editor: null,
             enabled: true,
             addons: {
-                images: true, // boolean or object containing configuration
                 embeds: true
             }
         };

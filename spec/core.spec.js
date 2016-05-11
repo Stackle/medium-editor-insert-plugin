@@ -32,14 +32,14 @@ describe('Core', function () {
     });
 
     it('initializes addons', function () {
-        spyOn($.fn, 'mediumInsertImages');
+        spyOn($.fn, 'mediumInsertEmbeds');
 
-        this.$el.data('plugin_mediumInsertImages', {
+        this.$el.data('plugin_mediumInsertEmbeds', {
             options: {}
         });
         this.$el.mediumInsert();
 
-        expect($.fn.mediumInsertImages.calls.count()).toEqual(1);
+        expect($.fn.mediumInsertEmbeds.calls.count()).toEqual(1);
     });
 
     it('does nothing if there is no addon selected', function () {
@@ -74,11 +74,11 @@ describe('Core', function () {
     });
 
     it('adds empty paragraph at the end if the last element is an addon element', function () {
-        this.$el.html('<div class="medium-insert-images"></div>');
+        this.$el.html('<div class="medium-insert-embeds"></div>');
 
         this.$el.mediumInsert();
 
-        expect(this.$el.find('.medium-insert-images').next().is('p')).toBe(true);
+        expect(this.$el.find('.medium-insert-embeds').next().is('p')).toBe(true);
     });
 
     it('adds plugin\'s buttons to the $el', function () {
@@ -101,21 +101,6 @@ describe('Core', function () {
         expect(this.$el.find('.medium-insert-buttons').css('display')).toBe('block');
         expect(this.$el.find('#paragraph').hasClass('medium-insert-active')).toBe(true);
         expect(this.$el.find('#paragraph2').hasClass('medium-insert-active')).toBe(false);
-    });
-
-    it('shows only addon button after clicking on addon paragraph', function () {
-        this.$el.html('<p id="paragraph" class="medium-insert-images">&nbsp;</p><p id="paragraph2" class="medium-insert-active">test</p>');
-
-        this.$el.mediumInsert();
-
-        // Place caret at the beginning of #paragraph
-        placeCaret(document.getElementById('paragraph'), 0);
-
-        this.$el.find('#paragraph').click();
-        jasmine.clock().tick(101);
-
-        expect(this.$el.find('.medium-insert-buttons').css('display')).toBe('block');
-        expect(this.$el.find('.medium-insert-buttons a[data-addon="embeds"]').parent().css('display')).toBe('none');
     });
 
     it('hides plugin\'s buttons after clicking on non-empty paragraph', function () {
@@ -155,12 +140,8 @@ describe('Core', function () {
 
         this.$el.html('<p id="paragraph">&nbsp;</p><p>test</p>');
 
-        this.$el.mediumInsert({
-            addons: {
-                embeds: false
-            }
-        });
-        addonInstance = this.$el.data('plugin_mediumInsertImages');
+        this.$el.mediumInsert();
+        addonInstance = this.$el.data('plugin_mediumInsertEmbeds');
 
         spyOn(addonInstance, 'add');
 
