@@ -7,36 +7,51 @@
  * Released under the MIT license
  */
 
-.medium-insert-embeds, .mediumInsert-embeds {
+.medium-insert-embeds {
   text-align: center;
   margin: 1em 0;
   position: relative; }
-  .medium-insert-embeds iframe, .mediumInsert-embeds iframe {
+  .medium-insert-embeds iframe {
     margin: 0 auto !important; }
-  .medium-insert-embeds div, .mediumInsert-embeds div {
+  .medium-insert-embeds div {
     margin: 0 auto !important; }
-  .medium-insert-embeds.medium-insert-embeds-left, .medium-insert-embeds-left.mediumInsert-embeds {
-    width: 33.33%;
-    float: left;
-    margin: 0 30px 20px 0; }
-  .medium-insert-embeds.medium-insert-embeds-right, .medium-insert-embeds-right.mediumInsert-embeds {
-    width: 33.33%;
-    float: right;
-    margin: 0 0 20px 30px; }
 
-.medium-insert-embeds figure, .mediumInsert-embeds figure {
+.medium-insert-images {
+  text-align: center;
+  margin: 1em 0;
   position: relative; }
-  .medium-insert-embeds figure figcaption, .mediumInsert-embeds figure figcaption {
+  .medium-insert-images div {
+    margin: 0 auto !important; }
+  .medium-insert-images figcaption.medium-insert-caption-placeholder {
+    min-width: 150px; }
+    .medium-insert-images figcaption.medium-insert-caption-placeholder:after {
+      top: 1em; }
+  .medium-insert-images.medium-insert-images-caption-top-left figcaption {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em; }
+  .medium-insert-images.medium-insert-images-caption-top-right figcaption {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em; }
+
+.medium-insert-embeds figure, .medium-insert-images figure {
+  position: relative; }
+  .medium-insert-embeds figure figcaption, .medium-insert-images figure figcaption {
     position: relative;
     z-index: 1;
     display: block;
     text-align: center;
     margin: 10px 0;
-    color: #ccc;
+    color: #424242;
     font-size: 0.8em;
     font-style: italic;
     outline: 0 solid transparent; }
-    .medium-insert-embeds figure figcaption:focus, .mediumInsert-embeds figure figcaption:focus {
+    .medium-insert-embeds figure figcaption:focus, .medium-insert-images figure figcaption:focus {
       outline: 0 solid transparent; }
 
 .medium-editor-insert-plugin {
@@ -142,7 +157,35 @@
 .medium-insert-embeds-toolbar {
   display: none; }
 
-.medium-insert-embeds .medium-insert-embeds-overlay, .mediumInsert-embeds .medium-insert-embeds-overlay {
+.medium-insert-embeds .medium-insert-embeds-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.medium-insert-images-input {
+  position: relative;
+  color: #ccc;
+  z-index: 1;
+  text-align: left; }
+
+.medium-insert-images-placeholder {
+  position: relative; }
+  .medium-insert-images-placeholder:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(data-placeholder);
+    color: #ccc; }
+
+.medium-insert-images-selected .medium-insert-image {
+  outline: 2px solid #000; }
+
+.medium-insert-images-toolbar {
+  display: none; }
+
+.medium-insert-images .medium-insert-images-overlay {
   position: absolute;
   width: 100%;
   height: 100%;

@@ -8,7 +8,8 @@
             editor: null,
             enabled: true,
             addons: {
-                embeds: true
+                embeds: true,
+                images: false
             }
         };
 
@@ -410,7 +411,7 @@
                 }
             });
 
-            if ($p.length && (($p.text().trim() === '' && !activeAddon) || activeAddon === 'images')) {
+            if ($p.length && (($p.text().trim() === '' && !activeAddon))) {
                 $p.addClass('medium-insert-active');
 
                 // If buttons are displayed on addon paragraph, wait 100ms for possible captions to display

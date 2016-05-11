@@ -11,23 +11,7 @@
             oembedProxy: 'http://medium.iframe.ly/api/oembed?iframe=1',
             captions: true,
             captionPlaceholder: 'Type caption (optional)',
-            styles: {
-                wide: {
-                    label: '<span class="fa fa-align-justify"></span>'
-                    // added: function ($el) {},
-                    // removed: function ($el) {}
-                },
-                left: {
-                    label: '<span class="fa fa-align-left"></span>'
-                    // added: function ($el) {},
-                    // removed: function ($el) {}
-                },
-                right: {
-                    label: '<span class="fa fa-align-right"></span>'
-                    // added: function ($el) {},
-                    // removed: function ($el) {}
-                }
-            },
+            styles: false,
             actions: {
                 remove: {
                     label: '<span class="fa fa-times"></span>',
