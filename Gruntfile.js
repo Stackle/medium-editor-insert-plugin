@@ -137,6 +137,13 @@ module.exports = function (grunt) {
                 options: {
                     debounceDelay: 250
                 }
+            },
+            js: {
+                files: ['src/js/**/*.js', 'spec/**/*.js'],
+                tasks: ['test'],
+                options: {
+                    debounceDelay: 250
+                }
             }
         },
 
