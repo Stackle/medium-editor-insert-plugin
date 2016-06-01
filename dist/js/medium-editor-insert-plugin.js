@@ -1495,6 +1495,16 @@ this["MediumInsert"]["Templates"]["src/js/templates/images-wrapper.hbs"] = Handl
                     label: '<span class="fa fa-align-right"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
+                },
+                "caption-bottom-left": {
+                    label: '<span class="fa fa-align-left"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "caption-bottom-right": {
+                    label: '<span class="fa fa-align-right"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
                 }
             },
             actions: {

@@ -39,6 +39,20 @@
         background-color: rgba(255,255,255,0.8);
         padding: 1em;
     }
+    &.medium-insert-images-caption-bottom-left figcaption {
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+        background-color: rgba(255,255,255,0.8);
+        padding: 1em;
+    }
+    &.medium-insert-images-caption-bottom-right figcaption {
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        background-color: rgba(255,255,255,0.8);
+        padding: 1em;
+    }
 }
 
 .medium-insert-embeds, .medium-insert-images {
