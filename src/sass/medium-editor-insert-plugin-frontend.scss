@@ -17,7 +17,11 @@
     div {
         margin: 0 auto !important;
     }
-
+    
+    figure {
+        display:inline-block;
+    }
+        
     figcaption.medium-insert-caption-placeholder {
       min-width: 150px;
       &:after {
@@ -27,31 +31,75 @@
 
     &.medium-insert-images-caption-top-left figcaption {
         position: absolute;
-        left: 50px;
-        top: 50px;
+        left: 5%;
+        top: 5%;
+        width:45%;
         background-color: rgba(255,255,255,0.8);
         padding: 1em;
     }
     &.medium-insert-images-caption-top-right figcaption {
         position: absolute;
-        right: 50px;
-        top: 50px;
+        right: 5%;
+        top: 5%;
+        width:45%;
         background-color: rgba(255,255,255,0.8);
         padding: 1em;
     }
     &.medium-insert-images-caption-bottom-left figcaption {
         position: absolute;
-        left: 50px;
-        bottom: 50px;
+        left: 5%;
+        bottom: 5%;
+        width:45%;
         background-color: rgba(255,255,255,0.8);
         padding: 1em;
     }
     &.medium-insert-images-caption-bottom-right figcaption {
         position: absolute;
-        right: 50px;
-        bottom: 50px;
+        right: 5%;
+        bottom: 5%;
+        width:45%;
         background-color: rgba(255,255,255,0.8);
         padding: 1em;
+    }
+    &.medium-insert-images-col-2-left{
+       	max-width: 16.667%;
+    	float: left;
+    	margin: 0 16px 0 0;
+    }    
+    &.medium-insert-images-col-4-left{
+       	max-width: 33.333%;
+    	float: left;
+    	margin: 0 16px 0 0;
+    }
+    &.medium-insert-images-col-6-left{
+       	max-width: 50%;
+    	float: left;
+    	margin: 0 16px 14px 0;
+    }
+    &.medium-insert-images-col-8-left{
+       	max-width: 66.667%;
+    	float: left;
+    	margin: 0 16px 0 0;
+    }
+      &.medium-insert-images-col-2-right{
+       	max-width: 16.667%;
+    	float: right;
+    	margin: 0 0 0 16px;
+    }    
+    &.medium-insert-images-col-4-right{
+       	max-width: 33.333%;
+    	float: right;
+    	margin: 0 0 0 16px;
+    }
+    &.medium-insert-images-col-6-right{
+       	max-width: 50%;
+    	float: right;
+    	margin: 0 0 0 16px;
+    }
+    &.medium-insert-images-col-8-right{
+       	max-width: 66.667%;
+    	float: right;
+    	margin: 0 0 0 16px;
     }
 }
 

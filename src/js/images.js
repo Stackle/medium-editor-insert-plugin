@@ -11,6 +11,46 @@
             captions: true,
             captionPlaceholder: 'Type caption (optional)',
             styles: {
+                "col-2-left": {
+                    label: '<span class="fa fa-th"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "col-4-left": {
+                    label: '<span class="fa fa-th"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "col-6-left": {
+                    label: '<span class="fa fa-th"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "col-8-left": {
+                    label: '<span class="fa fa-th"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "col-2-right": {
+                    label: '<span class="fa fa-th"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "col-4-right": {
+                    label: '<span class="fa fa-th"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "col-6-right": {
+                    label: '<span class="fa fa-th"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "col-8-right": {
+                    label: '<span class="fa fa-th"></span>'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
                 bottom: {
                     label: '<span class="fa fa-align-justify"></span>'
                     // added: function ($el) {},
