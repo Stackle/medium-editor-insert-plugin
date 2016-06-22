@@ -9,7 +9,6 @@
 
 .medium-insert-embeds {
   text-align: center;
-  margin: 1em 0;
   position: relative; }
   .medium-insert-embeds iframe {
     margin: 0 auto !important; }
@@ -18,7 +17,6 @@
 
 .medium-insert-images {
   text-align: center;
-  margin: 1em 0;
   position: relative; }
   .medium-insert-images div {
     margin: 0 auto !important; }
@@ -59,35 +57,35 @@
   .medium-insert-images.medium-insert-images-col-2-left {
     max-width: 16.667%;
     float: left;
-    margin: 0 16px 0 0; }
+    padding: 0 8px 0 0; }
   .medium-insert-images.medium-insert-images-col-4-left {
     max-width: 33.333%;
     float: left;
-    margin: 0 16px 0 0; }
+    padding: 0 8px 0 0; }
   .medium-insert-images.medium-insert-images-col-6-left {
     max-width: 50%;
     float: left;
-    margin: 0 16px 14px 0; }
+    padding: 0 8px 0 0; }
   .medium-insert-images.medium-insert-images-col-8-left {
     max-width: 66.667%;
     float: left;
-    margin: 0 16px 0 0; }
+    padding: 0 8px 0 0; }
   .medium-insert-images.medium-insert-images-col-2-right {
     max-width: 16.667%;
     float: right;
-    margin: 0 0 0 16px; }
+    padding: 0 0 0 8px; }
   .medium-insert-images.medium-insert-images-col-4-right {
     max-width: 33.333%;
     float: right;
-    margin: 0 0 0 16px; }
+    padding: 0 0 0 8px; }
   .medium-insert-images.medium-insert-images-col-6-right {
     max-width: 50%;
     float: right;
-    margin: 0 0 0 16px; }
+    padding: 0 0 0 8px; }
   .medium-insert-images.medium-insert-images-col-8-right {
     max-width: 66.667%;
     float: right;
-    margin: 0 0 0 16px; }
+    padding: 0 0 0 8px; }
 
 .medium-insert-embeds figure, .medium-insert-images figure {
   position: relative; }
