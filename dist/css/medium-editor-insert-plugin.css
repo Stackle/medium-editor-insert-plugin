@@ -241,3 +241,50 @@
   height: 100%;
   top: 0;
   left: 0; }
+
+.medium-btn-img-icon:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  display: block; }
+
+.medium-btn-img-icon.img-col-2-l:before {
+  background-image: url("../../../../common/images/mediumeditor/col-2-l.png"); }
+
+.medium-btn-img-icon.img-col-4-l:before {
+  background-image: url("../../../../common/images/mediumeditor/col-4-l.png"); }
+
+.medium-btn-img-icon.img-col-6-l:before {
+  background-image: url("../../../../common/images/mediumeditor/col-6-l.png"); }
+
+.medium-btn-img-icon.img-col-8-l:before {
+  background-image: url("../../../../common/images/mediumeditor/col-8-l.png"); }
+
+.medium-btn-img-icon.img-col-2-r:before {
+  background-image: url("../../../../common/images/mediumeditor/col-2-r.png"); }
+
+.medium-btn-img-icon.img-col-4-r:before {
+  background-image: url("../../../../common/images/mediumeditor/col-4-r.png"); }
+
+.medium-btn-img-icon.img-col-6-r:before {
+  background-image: url("../../../../common/images/mediumeditor/col-6-r.png"); }
+
+.medium-btn-img-icon.img-col-8-r:before {
+  background-image: url("../../../../common/images/mediumeditor/col-8-r.png"); }
+
+.medium-btn-img-icon.bottom:before {
+  background-image: url("../../../../common/images/mediumeditor/cap-bottom.png"); }
+
+.medium-btn-img-icon.cap-top-l:before {
+  background-image: url("../../../../common/images/mediumeditor/cap-top-l.png"); }
+
+.medium-btn-img-icon.cap-top-r:before {
+  background-image: url("../../../../common/images/mediumeditor/cap-top-r.png"); }
+
+.medium-btn-img-icon.cap-bottom-l:before {
+  background-image: url("../../../../common/images/mediumeditor/cap-bottom-l.png"); }
+
+.medium-btn-img-icon.cap-bottom-r:before {
+  background-image: url("../../../../common/images/mediumeditor/cap-bottom-r.png"); }

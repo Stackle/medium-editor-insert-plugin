@@ -35,3 +35,54 @@
         left: 0;
     }
 }
+
+.medium-btn-img-icon {
+	&:before {
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-size: (20px) (20px);
+		background-repeat: no-repeat;
+		display: block;
+	}
+	
+	&.img-col-2-l:before {
+		background-image: url("../../../../common/images/mediumeditor/col-2-l.png");
+	}
+	&.img-col-4-l:before {
+		background-image: url("../../../../common/images/mediumeditor/col-4-l.png");
+	}
+	&.img-col-6-l:before {
+		background-image: url("../../../../common/images/mediumeditor/col-6-l.png");		
+	}
+	&.img-col-8-l:before {
+		background-image: url("../../../../common/images/mediumeditor/col-8-l.png");
+	}
+	&.img-col-2-r:before {
+		background-image: url("../../../../common/images/mediumeditor/col-2-r.png");
+	}
+	&.img-col-4-r:before {
+		background-image: url("../../../../common/images/mediumeditor/col-4-r.png");
+	}
+	&.img-col-6-r:before {
+		background-image: url("../../../../common/images/mediumeditor/col-6-r.png");
+	}
+	&.img-col-8-r:before {
+		background-image: url("../../../../common/images/mediumeditor/col-8-r.png");
+	}
+	&.bottom:before {
+		background-image: url("../../../../common/images/mediumeditor/cap-bottom.png");
+	}
+	&.cap-top-l:before {
+		background-image: url("../../../../common/images/mediumeditor/cap-top-l.png");		
+	}
+	&.cap-top-r:before {
+		background-image: url("../../../../common/images/mediumeditor/cap-top-r.png");
+	}
+	&.cap-bottom-l:before {
+		background-image: url("../../../../common/images/mediumeditor/cap-bottom-l.png");
+	}
+	&.cap-bottom-r:before {
+		background-image: url("../../../../common/images/mediumeditor/cap-bottom-r.png");
+	}
+}

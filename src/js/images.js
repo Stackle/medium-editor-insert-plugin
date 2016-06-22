@@ -12,67 +12,67 @@
             captionPlaceholder: 'Type caption (optional)',
             styles: {
                 "col-2-left": {
-                    label: '<span class="fa fa-th"></span>'
+                    label: '<span class="medium-btn-img-icon img-col-2-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-4-left": {
-                    label: '<span class="fa fa-th"></span>'
+                    label: '<span class="medium-btn-img-icon img-col-4-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-6-left": {
-                    label: '<span class="fa fa-th"></span>'
+                    label: '<span class="medium-btn-img-icon img-col-6-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-8-left": {
-                    label: '<span class="fa fa-th"></span>'
+                    label: '<span class="medium-btn-img-icon img-col-8-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-2-right": {
-                    label: '<span class="fa fa-th"></span>'
+                    label: '<span class="medium-btn-img-icon img-col-2-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-4-right": {
-                    label: '<span class="fa fa-th"></span>'
+                    label: '<span class="medium-btn-img-icon img-col-4-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-6-right": {
-                    label: '<span class="fa fa-th"></span>'
+                    label: '<span class="medium-btn-img-icon img-col-6-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-8-right": {
-                    label: '<span class="fa fa-th"></span>'
+                    label: '<span class="medium-btn-img-icon img-col-8-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 bottom: {
-                    label: '<span class="fa fa-align-justify"></span>'
+                    label: '<span class="medium-btn-img-icon bottom"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "caption-top-left": {
-                    label: '<span class="fa fa-align-left"></span>'
+                    label: '<span class="medium-btn-img-icon cap-top-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "caption-top-right": {
-                    label: '<span class="fa fa-align-right"></span>'
+                    label: '<span class="medium-btn-img-icon cap-top-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "caption-bottom-left": {
-                    label: '<span class="fa fa-align-left"></span>'
+                    label: '<span class="medium-btn-img-icon cap-bottom-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "caption-bottom-right": {
-                    label: '<span class="fa fa-align-right"></span>'
+                    label: '<span class="medium-btn-img-icon cap-bottom-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 }
