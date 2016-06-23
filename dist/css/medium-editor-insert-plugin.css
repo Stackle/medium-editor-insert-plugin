@@ -244,45 +244,58 @@
   content: "";
   width: 20px;
   height: 20px;
-  background-size: 20px 20px;
+  background-image: url("../../../../common/images/sprites-20.png");
   background-repeat: no-repeat;
   display: block; }
 
 .medium-btn-img-icon.img-col-2-l:before {
-  background-image: url("../../../../common/images/mediumeditor/col-2-l.png"); }
+  background-position: 0px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.img-col-4-l:before {
-  background-image: url("../../../../common/images/mediumeditor/col-4-l.png"); }
+  background-position: -20px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.img-col-6-l:before {
-  background-image: url("../../../../common/images/mediumeditor/col-6-l.png"); }
+  background-position: -40px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.img-col-8-l:before {
-  background-image: url("../../../../common/images/mediumeditor/col-8-l.png"); }
+  background-position: -60px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.img-col-2-r:before {
-  background-image: url("../../../../common/images/mediumeditor/col-2-r.png"); }
+  background-position: -80px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.img-col-4-r:before {
-  background-image: url("../../../../common/images/mediumeditor/col-4-r.png"); }
+  background-position: -100px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.img-col-6-r:before {
-  background-image: url("../../../../common/images/mediumeditor/col-6-r.png"); }
+  background-position: -120px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.img-col-8-r:before {
-  background-image: url("../../../../common/images/mediumeditor/col-8-r.png"); }
+  background-position: -140px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.bottom:before {
-  background-image: url("../../../../common/images/mediumeditor/cap-bottom.png"); }
+  background-position: -240px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.cap-top-l:before {
-  background-image: url("../../../../common/images/mediumeditor/cap-top-l.png"); }
+  background-position: -160px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.cap-top-r:before {
-  background-image: url("../../../../common/images/mediumeditor/cap-top-r.png"); }
+  background-position: -200px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.cap-bottom-l:before {
-  background-image: url("../../../../common/images/mediumeditor/cap-bottom-l.png"); }
+  background-position: -180px 0px;
+  background-size: 280px 20px; }
 
 .medium-btn-img-icon.cap-bottom-r:before {
-  background-image: url("../../../../common/images/mediumeditor/cap-bottom-r.png"); }
+  background-position: -220px 0px;
+  background-size: 280px 20px; }

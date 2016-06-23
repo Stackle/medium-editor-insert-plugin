@@ -36,53 +36,58 @@
     }
 }
 
+@mixin sprites-20($x, $y) {
+	background-position: ($x * -20px) ($y * -20px);
+	background-size: (14*20px) (1*20px);
+}
+
 .medium-btn-img-icon {
 	&:before {
 		content: "";
 		width: 20px;
 		height: 20px;
-		background-size: (20px) (20px);
+		background-image: url("../../../../common/images/sprites-20.png");
 		background-repeat: no-repeat;
 		display: block;
 	}
 	
 	&.img-col-2-l:before {
-		background-image: url("../../../../common/images/mediumeditor/col-2-l.png");
+		@include sprites-20(0, 0);
 	}
 	&.img-col-4-l:before {
-		background-image: url("../../../../common/images/mediumeditor/col-4-l.png");
+		@include sprites-20(1, 0);
 	}
 	&.img-col-6-l:before {
-		background-image: url("../../../../common/images/mediumeditor/col-6-l.png");		
+		@include sprites-20(2, 0);		
 	}
 	&.img-col-8-l:before {
-		background-image: url("../../../../common/images/mediumeditor/col-8-l.png");
+		@include sprites-20(3, 0);
 	}
 	&.img-col-2-r:before {
-		background-image: url("../../../../common/images/mediumeditor/col-2-r.png");
+		@include sprites-20(4, 0);
 	}
 	&.img-col-4-r:before {
-		background-image: url("../../../../common/images/mediumeditor/col-4-r.png");
+		@include sprites-20(5, 0);
 	}
 	&.img-col-6-r:before {
-		background-image: url("../../../../common/images/mediumeditor/col-6-r.png");
+		@include sprites-20(6, 0);
 	}
 	&.img-col-8-r:before {
-		background-image: url("../../../../common/images/mediumeditor/col-8-r.png");
+		@include sprites-20(7, 0);
 	}
 	&.bottom:before {
-		background-image: url("../../../../common/images/mediumeditor/cap-bottom.png");
+		@include sprites-20(12, 0);
 	}
 	&.cap-top-l:before {
-		background-image: url("../../../../common/images/mediumeditor/cap-top-l.png");		
+		@include sprites-20(8, 0);		
 	}
 	&.cap-top-r:before {
-		background-image: url("../../../../common/images/mediumeditor/cap-top-r.png");
+		@include sprites-20(10, 0);
 	}
 	&.cap-bottom-l:before {
-		background-image: url("../../../../common/images/mediumeditor/cap-bottom-l.png");
+		@include sprites-20(9, 0);
 	}
 	&.cap-bottom-r:before {
-		background-image: url("../../../../common/images/mediumeditor/cap-bottom-r.png");
+		@include sprites-20(11, 0);
 	}
 }
