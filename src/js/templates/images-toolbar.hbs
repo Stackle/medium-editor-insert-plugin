@@ -4,7 +4,7 @@
             {{#each styles}}
                 {{#if label}}
                     <li>
-                        <button class="medium-editor-action" data-action="{{@key}}">{{{label}}}</button>
+                        <button class="medium-editor-action" data-action="{{@key}}" title="{{{title}}}">{{{label}}}</button>
                     </li>
                 {{/if}}
             {{/each}}
@@ -18,7 +18,7 @@
             {{#each actions}}
                 {{#if label}}
                     <li>
-                        <button class="medium-editor-action" data-action="{{@key}}">{{{label}}}</button>
+                        <button class="medium-editor-action" data-action="{{@key}}" title="{{{title}}}">{{{label}}}</button>
                     </li>
                 {{/if}}
             {{/each}}

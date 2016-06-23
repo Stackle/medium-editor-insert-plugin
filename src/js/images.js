@@ -12,66 +12,79 @@
             captionPlaceholder: 'Type caption (optional)',
             styles: {
                 "col-2-left": {
+                    title: 'align left 2 column',
                     label: '<span class="medium-btn-img-icon img-col-2-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-4-left": {
+                    title: 'align left 4 column',
                     label: '<span class="medium-btn-img-icon img-col-4-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-6-left": {
+                    title: 'align left 6 column',
                     label: '<span class="medium-btn-img-icon img-col-6-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-8-left": {
+                    title: 'align left 8 column',
                     label: '<span class="medium-btn-img-icon img-col-8-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-2-right": {
+                    title: 'align right 2 column',
                     label: '<span class="medium-btn-img-icon img-col-2-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-4-right": {
+                    title: 'align right 4 column',
                     label: '<span class="medium-btn-img-icon img-col-4-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-6-right": {
+                    title: 'align right 6 column',
                     label: '<span class="medium-btn-img-icon img-col-6-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "col-8-right": {
+                    title: 'align right 8 column',
                     label: '<span class="medium-btn-img-icon img-col-8-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 bottom: {
+                    title: 'move caption to bottom',
                     label: '<span class="medium-btn-img-icon bottom"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "caption-top-left": {
+                    title: 'move caption to top left',
                     label: '<span class="medium-btn-img-icon cap-top-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "caption-top-right": {
+                    title: 'move caption to top right',
                     label: '<span class="medium-btn-img-icon cap-top-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "caption-bottom-left": {
+                    title: 'move caption to bottom left',
                     label: '<span class="medium-btn-img-icon cap-bottom-l"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
                 "caption-bottom-right": {
+                    title: 'move caption to bottom right',
                     label: '<span class="medium-btn-img-icon cap-bottom-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
