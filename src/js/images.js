@@ -483,7 +483,8 @@
     Images.prototype.addToolbar = function () {
         var $image = this.$el.find('.medium-insert-images-selected'),
             active = false,
-            $toolbar, $toolbar2, top, mediumEditor, toolbarContainer;
+            $toolbar, $toolbar2, top, mediumEditor, toolbarContainer,
+            toolbarLeft, toolbar2Left;
 
         if ($image.length === 0) {
             return;
@@ -504,18 +505,20 @@
         if (top < 0) {
             top = 0;
         }
+        toolbarLeft = Math.max(0, $image.offset().left + $image.width() / 2 - $toolbar.width() / 2);
+        toolbar2Left = Math.max(0, $image.offset().left + $image.width() - $toolbar2.width() - 4); // 4px - distance from a border
 
         $toolbar
             .css({
                 top: top,
-                left: $image.offset().left + $image.width() / 2 - $toolbar.width() / 2
+                left: toolbarLeft
             })
             .show();
 
         $toolbar2
             .css({
                 top: $image.offset().top + 2, // 2px - distance from a border
-                left: $image.offset().left + $image.width() - $toolbar2.width() - 4 // 4px - distance from a border
+                left: toolbar2Left
             })
             .show();
 
