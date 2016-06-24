@@ -561,7 +561,12 @@
         });
 
         if (active === false) {
-            $toolbar.find('button').first().addClass('medium-editor-button-active');
+            //find default button, move caption to bottom
+            $toolbar.find('button').each(function () {
+                if ($(this).attr('data-action') === 'bottom') {
+                    $(this).addClass('medium-editor-button-active');
+                }
+            });
         }
     };
 
@@ -580,7 +585,7 @@
             $image = this.$el.find('.medium-insert-images-selected'),
             that = this,
             classList = $image.attr('class').split(/\s+/),
-            alignmentClass;
+            alignmentClass, oldClass;
 
         $button.addClass('medium-editor-button-active');
         $li.siblings().find('.medium-editor-button-active').removeClass('medium-editor-button-active');
@@ -590,32 +595,28 @@
                 alignmentClass = item;
             } else if (item.match(/^medium-insert-images-col-([0-9]+)-right$/)) {
                 alignmentClass = item;
+            } else if (item.match(/^medium-insert-images-caption-([a-z-]+)$/) || item === 'medium-insert-images-bottom') {
+                oldClass = item;
             }
         });
 
         $lis.find('button').each(function () {
             var className = 'medium-insert-images-' + $(this).data('action');
             if ($(this).hasClass('medium-editor-button-active')) {
+                $image.removeClass('extra-margin-right');
+                $image.removeClass('extra-margin-left');
+                if (alignmentClass && className === 'medium-insert-images-extra-margin') {
+                    $image.addClass(alignmentClass);
+                }
                 if (jQuery.inArray(className, classList) > -1 && className === 'medium-insert-images-extra-margin') {
                     $image.removeClass(className);
-                    if (className === 'medium-insert-images-extra-margin') {
-                        $image.removeClass('extra-margin-left');
-                        $image.removeClass('extra-margin-right');
-                    }
-                    if (alignmentClass) {
-                        $image.addClass(alignmentClass);
-                    }
-                } else {
+                } else if (alignmentClass || className !== 'medium-insert-images-extra-margin') {
                     $image.addClass(className);
-                    if (alignmentClass && className === 'medium-insert-images-extra-margin') {
-                        $image.addClass(alignmentClass);
-                    }
-                    $image.removeClass('extra-margin-right');
-                    $image.removeClass('extra-margin-left');
-
                     if (that.options.styles[$(this).data('action')].added) {
                         that.options.styles[$(this).data('action')].added($image);
                     }
+                } else {
+                    $image.addClass(oldClass);
                 }
             } else {
                 $image.removeClass(className);
