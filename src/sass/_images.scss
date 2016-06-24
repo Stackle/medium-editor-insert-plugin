@@ -90,4 +90,13 @@
 	&.cap-bottom-r:before {
 		@include sprites-20(11, 0);
 	}
+	&.img-extra-margin:before {
+		@include sprites-20(13, 0);
+	}
+}
+.extra-margin-left {
+	margin-left: 8px
+}
+.extra-margin-right {
+	margin-right: 8px
 }

@@ -299,3 +299,13 @@
 .medium-btn-img-icon.cap-bottom-r:before {
   background-position: -220px 0px;
   background-size: 280px 20px; }
+
+.medium-btn-img-icon.img-extra-margin:before {
+  background-position: -260px 0px;
+  background-size: 280px 20px; }
+
+.extra-margin-left {
+  margin-left: 8px; }
+
+.extra-margin-right {
+  margin-right: 8px; }

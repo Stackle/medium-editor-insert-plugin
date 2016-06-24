@@ -88,6 +88,24 @@
                     label: '<span class="medium-btn-img-icon cap-bottom-r"></span>'
                     // added: function ($el) {},
                     // removed: function ($el) {}
+                },
+                "extra-margin": {
+                    title: 'add extra margin',
+                    label: '<span class="medium-btn-img-icon img-extra-margin"></span>',
+                    added: function ($el) {
+                        var classList = $el.attr('class').split(/\s+/),
+                        marginSide;
+                        $.each(classList, function (index, item) {
+                            if (item.match(/^medium-insert-images-col-([0-9]+)-left$/)) {
+                                marginSide = 'right';
+                            } else if (item.match(/^medium-insert-images-col-([0-9]+)-right$/)) {
+                                marginSide = 'left';
+                            }
+                        });
+                        if (marginSide) {
+                            $el.addClass('extra-margin-' + marginSide);
+                        }
+                    }
                 }
             },
             actions: {
@@ -560,19 +578,44 @@
             $ul = $li.closest('ul'),
             $lis = $ul.find('li'),
             $image = this.$el.find('.medium-insert-images-selected'),
-            that = this;
+            that = this,
+            classList = $image.attr('class').split(/\s+/),
+            alignmentClass;
 
         $button.addClass('medium-editor-button-active');
         $li.siblings().find('.medium-editor-button-active').removeClass('medium-editor-button-active');
 
+        $.each(classList, function (index, item) {
+            if (item.match(/^medium-insert-images-col-([0-9]+)-left$/)) {
+                alignmentClass = item;
+            } else if (item.match(/^medium-insert-images-col-([0-9]+)-right$/)) {
+                alignmentClass = item;
+            }
+        });
+
         $lis.find('button').each(function () {
             var className = 'medium-insert-images-' + $(this).data('action');
-
             if ($(this).hasClass('medium-editor-button-active')) {
-                $image.addClass(className);
+                if (jQuery.inArray(className, classList) > -1 && className === 'medium-insert-images-extra-margin') {
+                    $image.removeClass(className);
+                    if (className === 'medium-insert-images-extra-margin') {
+                        $image.removeClass('extra-margin-left');
+                        $image.removeClass('extra-margin-right');
+                    }
+                    if (alignmentClass) {
+                        $image.addClass(alignmentClass);
+                    }
+                } else {
+                    $image.addClass(className);
+                    if (alignmentClass && className === 'medium-insert-images-extra-margin') {
+                        $image.addClass(alignmentClass);
+                    }
+                    $image.removeClass('extra-margin-right');
+                    $image.removeClass('extra-margin-left');
 
-                if (that.options.styles[$(this).data('action')].added) {
-                    that.options.styles[$(this).data('action')].added($image);
+                    if (that.options.styles[$(this).data('action')].added) {
+                        that.options.styles[$(this).data('action')].added($image);
+                    }
                 }
             } else {
                 $image.removeClass(className);
