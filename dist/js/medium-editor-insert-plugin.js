@@ -42,13 +42,13 @@ this["MediumInsert"]["Templates"]["src/js/templates/core-buttons.hbs"] = Handleb
     + container.escapeExpression(((helper = (helper = helpers.key || (data && data.key)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"key","hash":{},"data":data}) : helper)))
     + "\" data-action=\"add\" class=\"medium-insert-action\">"
     + ((stack1 = ((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"label","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "</a></li>\n";
+    + "</a></li>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"medium-insert-buttons\" contenteditable=\"false\" style=\"display: none\">\n    <a class=\"medium-insert-buttons-show\">+</a>\n    <ul class=\"medium-insert-buttons-addons\" style=\"display: none\">\n"
+  return "<div class=\"medium-insert-buttons\" contenteditable=\"false\" style=\"display: none\">\r\n    <a class=\"medium-insert-buttons-show\">+</a>\r\n    <ul class=\"medium-insert-buttons-addons\" style=\"display: none\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.addons : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    </ul>\n</div>\n";
+    + "    </ul>\r\n</div>\r\n";
 },"useData":true});
 
 this["MediumInsert"]["Templates"]["src/js/templates/core-caption.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -60,15 +60,15 @@ this["MediumInsert"]["Templates"]["src/js/templates/core-caption.hbs"] = Handleb
 },"useData":true});
 
 this["MediumInsert"]["Templates"]["src/js/templates/core-empty-line.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<p><br></p>\n";
+    return "<p><br></p>\r\n";
 },"useData":true});
 
 this["MediumInsert"]["Templates"]["src/js/templates/embeds-toolbar.hbs"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "    <div class=\"medium-insert-embeds-toolbar medium-editor-toolbar medium-toolbar-arrow-under medium-editor-toolbar-active\">\n        <ul class=\"medium-editor-toolbar-actions clearfix\">\n"
+  return "    <div class=\"medium-insert-embeds-toolbar medium-editor-toolbar medium-toolbar-arrow-under medium-editor-toolbar-active\">\r\n        <ul class=\"medium-editor-toolbar-actions clearfix\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.styles : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n";
+    + "        </ul>\r\n    </div>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -76,39 +76,39 @@ this["MediumInsert"]["Templates"]["src/js/templates/embeds-toolbar.hbs"] = Handl
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function";
 
-  return "                    <li>\n                        <button class=\"medium-editor-action\" data-action=\""
+  return "                    <li>\r\n                        <button class=\"medium-editor-action\" data-action=\""
     + container.escapeExpression(((helper = (helper = helpers.key || (data && data.key)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"key","hash":{},"data":data}) : helper)))
     + "\">"
     + ((stack1 = ((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"label","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "</button>\n                    </li>\n";
+    + "</button>\r\n                    </li>\r\n";
 },"5":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "    <div class=\"medium-insert-embeds-toolbar2 medium-editor-toolbar medium-editor-toolbar-active\">\n        <ul class=\"medium-editor-toolbar-actions clearfix\">\n"
+  return "    <div class=\"medium-insert-embeds-toolbar2 medium-editor-toolbar medium-editor-toolbar-active\">\r\n        <ul class=\"medium-editor-toolbar-actions clearfix\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.actions : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n";
+    + "        </ul>\r\n    </div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {};
 
   return ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.styles : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
+    + "\r\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.actions : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 
 this["MediumInsert"]["Templates"]["src/js/templates/embeds-wrapper.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
 
-  return "<div class=\"medium-insert-embeds\" contenteditable=\"false\">\n	<figure>\n		<div class=\"medium-insert-embed\">\n			"
+  return "<div class=\"medium-insert-embeds\" contenteditable=\"false\">\r\n	<figure>\r\n		<div class=\"medium-insert-embed\">\r\n			"
     + ((stack1 = ((helper = (helper = helpers.html || (depth0 != null ? depth0.html : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"html","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "\n		</div>\n	</figure>\n	<div class=\"medium-insert-embeds-overlay\"></div>\n</div>";
+    + "\r\n		</div>\r\n	</figure>\r\n	<div class=\"medium-insert-embeds-overlay\"></div>\r\n</div>";
 },"useData":true});
 
 this["MediumInsert"]["Templates"]["src/js/templates/images-toolbar.hbs"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "    <div class=\"medium-insert-images-toolbar medium-editor-toolbar medium-toolbar-arrow-under medium-editor-toolbar-active\">\n        <ul class=\"medium-editor-toolbar-actions clearfix\">\n"
+  return "    <div class=\"medium-insert-images-toolbar medium-editor-toolbar medium-toolbar-arrow-under medium-editor-toolbar-active\">\r\n        <ul class=\"medium-editor-toolbar-actions clearfix\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.styles : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n";
+    + "        </ul>\r\n    </div>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -116,33 +116,33 @@ this["MediumInsert"]["Templates"]["src/js/templates/images-toolbar.hbs"] = Handl
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function";
 
-  return "                    <li>\n                        <button class=\"medium-editor-action\" data-action=\""
+  return "                    <li>\r\n                        <button class=\"medium-editor-action\" data-action=\""
     + container.escapeExpression(((helper = (helper = helpers.key || (data && data.key)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"key","hash":{},"data":data}) : helper)))
     + "\" title=\""
     + ((stack1 = ((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "\">"
     + ((stack1 = ((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"label","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "</button>\n                    </li>\n";
+    + "</button>\r\n                    </li>\r\n";
 },"5":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "    <div class=\"medium-insert-images-toolbar2 medium-editor-toolbar medium-editor-toolbar-active\">\n        <ul class=\"medium-editor-toolbar-actions clearfix\">\n"
+  return "    <div class=\"medium-insert-images-toolbar2 medium-editor-toolbar medium-editor-toolbar-active\">\r\n        <ul class=\"medium-editor-toolbar-actions clearfix\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.actions : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n";
+    + "        </ul>\r\n    </div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {};
 
   return ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.styles : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
+    + "\r\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.actions : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 
 this["MediumInsert"]["Templates"]["src/js/templates/images-wrapper.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
 
-  return "<div class=\"medium-insert-images\" contenteditable=\"false\">\n	<figure>\n		<div class=\"medium-insert-image\">\n			<img src=\""
+  return "<div class=\"medium-insert-images\" contenteditable=\"false\">\r\n	<figure>\r\n		<div class=\"medium-insert-image\">\r\n			<img src=\""
     + ((stack1 = ((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"url","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "\" />\n		</div>\n	</figure>\n	<div class=\"medium-insert-images-overlay\"></div>\n</div>\n";
+    + "\" />\r\n		</div>\r\n	</figure>\r\n	<div class=\"medium-insert-images-overlay\"></div>\r\n</div>\r\n";
 },"useData":true});
 ;(function ($, window, document, undefined) {
 
@@ -1578,6 +1578,18 @@ this["MediumInsert"]["Templates"]["src/js/templates/images-wrapper.hbs"] = Handl
                             $el.addClass('extra-margin-' + marginSide);
                         }
                     }
+                },
+                "caption-top": {
+                    title: 'move caption to top',
+                    label: 'Top'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "caption-bottom": {
+                    title: 'move caption to bottom',
+                    label: 'Bottom'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
                 }
             },
             actions: {
