@@ -106,6 +106,18 @@
                             $el.addClass('extra-margin-' + marginSide);
                         }
                     }
+                },
+                "caption-top": {
+                    title: 'move caption to top',
+                    label: 'Top'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "caption-bottom": {
+                    title: 'move caption to bottom',
+                    label: 'Bottom'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
                 }
             },
             actions: {
