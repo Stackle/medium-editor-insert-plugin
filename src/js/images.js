@@ -89,6 +89,18 @@
                     // added: function ($el) {},
                     // removed: function ($el) {}
                 },
+                "caption-top": {
+                    title: 'move caption to top',
+                    label: 'Top'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
+                "caption-bottom": {
+                    title: 'move caption to bottom',
+                    label: 'Bottom'
+                    // added: function ($el) {},
+                    // removed: function ($el) {}
+                },
                 "extra-margin": {
                     title: 'add extra margin',
                     label: '<span class="medium-btn-img-icon img-extra-margin"></span>',
@@ -106,18 +118,6 @@
                             $el.addClass('extra-margin-' + marginSide);
                         }
                     }
-                },
-                "caption-top": {
-                    title: 'move caption to top',
-                    label: 'Top'
-                    // added: function ($el) {},
-                    // removed: function ($el) {}
-                },
-                "caption-bottom": {
-                    title: 'move caption to bottom',
-                    label: 'Bottom'
-                    // added: function ($el) {},
-                    // removed: function ($el) {}
                 }
             },
             actions: {
@@ -607,7 +607,7 @@
                 alignmentClass = item;
             } else if (item.match(/^medium-insert-images-col-([0-9]+)-right$/)) {
                 alignmentClass = item;
-            } else if (item.match(/^medium-insert-images-caption-([a-z-]+)$/) || item === 'medium-insert-images-bottom') {
+            } else if (item.match(/^medium-insert-images-caption([a-z-]+)$/) || item === 'medium-insert-images-bottom') {
                 oldClass = item;
             }
         });
